@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $location = test_input($_POST["location"]);
         $value1 = test_input($_POST["value1"]);
         $value2 = test_input($_POST["value2"]);
+        $value3 = test_input($_POST["value3"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -31,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         
         $sql = "INSERT INTO SensorData (sensor, location, value1, value2)
-        VALUES ('" . $sensor . "', '" . $location . "', '" . $value1 . "', '" . $value2 . "')";
+         VALUES ('" . $sensor . "', '" . $location . "', '" . $value1 . "', '" . $value2 . "', '" . $value3 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
