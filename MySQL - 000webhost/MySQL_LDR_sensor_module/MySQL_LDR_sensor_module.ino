@@ -15,7 +15,7 @@ const char* serverName = "https://overhanging-governm.000webhostapp.com/post-esp
 // If you change the apiKeyValue value, the PHP file /post-esp-data.php also needs to have the same key 
 String apiKeyValue = "tPmAT5Ab3j7F9";
 
-String sensorName = "IR Sensor";
+String sensorName = "LDR Sensor";
 String sensorLocation = "BB202";
 
 void setup() {
